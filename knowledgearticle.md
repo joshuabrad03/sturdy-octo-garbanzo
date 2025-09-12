@@ -1,5 +1,7 @@
 ## Agile Handoffs: A Full Stack Developer's Guide to Not Forgetting What You Did Yesterday
+
 ### The "Oh, I'll Remember That" Lie
+
 I'm a few hours into setting up my first full-stack Node.js app, and I've just hit a wall. It's late, and I can't figure out why my environment variables aren't loading properly in my server-side code. I've been fighting with it for what feels like an enternity, and my brain is completely fried. I decide to call it a night, but not before I leave a few reminders for my future self. I'm confident I'll just pick up right where I left off tomorrow morning. After all, I've got a pretty good memory, right?
 
 The next day, I open my project, and... absouletly nothing. The context I had last night is gone. I stare at my code for a solid 10 minutes, trying to remember what I was even trying to do. I was so sure that I'd remember that I didn't even leave a proper note. It was in this moment that I learned a critical lesson about coding: your future self is not a mind reader. This experience highlighted the importance of a practice I've never understood in practice: Agile handoffs, mainly when you're handing off to yourself.
@@ -11,3 +13,16 @@ In a team environment, an **Agile handoff** is the process of transferring work 
 But what happens when the only person you're handing off to is yourself? This is where the concept of a "self-handoff" comes into play. It's the disciplined practice of documenting your work before you stop, so you can pick it up again without losing valuable time. It's about treating your future self like a valued teammate, providing them with all the context they need to succeed. As **[Martin Fowler notes](https://martinfowler.com/agile.html)**, **code is read more often than it's written**, so making it readable and providing context is important for long-term maintainability. This applies just as much to your personal projects as it does to a large team's codebase.
 
 The "self-handoff" is crucial because it helps prevent context switching, which is incredibly inefficient. A 2006 **[study on Heterogeneous Networks](https://ieeexplore.ieee.org/abstract/document/1652211)** from the Institute of Electrical and Electronics Engineers found that when a programmer is interrupted, it can take them an average of 23 minutes to get back to the task at hand. While this study focuses on external interruptions, the same principle applies to internal ones—like forgetting what you were doing. Taking a moment to document your progress is a small investment that can save you a significant amount of time later.
+
+### How to Practice the Self-Handoff
+
+After my frustrating experience, I've adopted a few key habits that I now practice religiously:
+
+- **Leave breadcrumbs in your code.**
+  - Use comments to explain your intentions, not just what the code does. For example, instead of `// set up server`, write `// TODO: Set up server and figure out why environment variables aren't loading.`
+- **Create detailed Git commit messages.**
+  - I now make it a point to write a descriptive commit message every time I stop for the day. A good message isn't just "WIP" (Work In Progress). It should describe what I accomplished and, more importantly, what's left to do.
+- **Use a README or a separate NOTES.md file.**
+  - For larger projects, I keep a running list of thoughts, to-do items, and discoveries in a separate document. This acts as a central hub for all my context.
+
+By treating my personal project with the same care and documentation I would a team project, I've found that I'm more productive and less frustrated. My future self thanks me for it. This simple practice of an Agile self-handoff is the single most effective way to ensure a smooth, headache-free development process. It's a small change that yields huge improvements, and it's a practice that will serve you well, whether you're working on your own or as part of a large team.
